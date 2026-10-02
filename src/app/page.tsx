@@ -8,16 +8,34 @@ const publications = [
   {
     number: "01",
     year: "2025",
-    category: "BCI / HCI / ACCESSIBILITY",
+    category: "BCI / HCI / ACCESSIBLE GAMING",
     title:
       "Inclusive Gaming Through Brain-Computer Interfaces: The Mind Mastery Experience",
-    authors: "O. Odunze · E. Ballou · A. Kanu · A. Kelly · E. Void",
-    venue: "Human-Computer Interaction & Emerging Technologies 195, 363",
+    authors:
+      "O. Odunze · E. Ballou · A. Kanu · A. Kelly · E. Void · N. Mack",
+    venue:
+      "Human-Computer Interaction & Emerging Technologies · AHFE 2025 · Vol. 195",
     details:
-      "Brain-computer interfaces · Accessible gaming · Human-computer interaction",
+      "Brain-Computer Interfaces · Accessible Gaming · Mind Mastery",
+    doi: "https://doi.org/10.54941/ahfe1006255",
   },
+
   {
     number: "02",
+    year: "2025",
+    category: "PROGRAMMING EDUCATION / HCI",
+    title: "PyPro: Think in Code. Grow in Logic!",
+    authors:
+      "Elijah Ballou · Obinna Odunze · Michael Adeleke · Naja Mack",
+    venue:
+      "Human-Computer Interaction & Emerging Technologies · AHFE 2025 · Volume 195",
+    details:
+      "Programming Education · Human-Computer Interaction",
+    doi: "https://doi.org/10.54941/ahfe1006251",
+  },
+
+  {
+    number: "03",
     year: "2025",
     category: "AI / HCI / INTELLIGENT TUTORING",
     title:
@@ -30,51 +48,50 @@ const publications = [
       "MathWiz · Artificial Intelligence · Adaptive Learning · Culturally Responsive Learning",
     doi: "https://doi.org/10.1145/3706599.3719835",
   },
-  {
-    number: "03",
-    year: "2025",
-    category: "COMPUTING EDUCATION / HCI",
-    title: "PyPro: Think in Code. Grow in Logic!",
-    authors: "E. Ballou · O. Odunze · M. Adeleke · N.A. Mack",
-    venue: "Human-Computer Interaction & Emerging Technologies 195, 324",
-    details:
-      "Computing education · Interactive learning · Human-computer interaction",
-  },
+
   {
     number: "04",
     year: "2024",
-    category: "COMPUTING EDUCATION / STEM",
-    title: "Breaking Stereotypes and Feeding the STEM Pipeline",
+    category: "COMPUTER SCIENCE EDUCATION / STEM",
+    title:
+      "Breaking Stereotypes and Feeding the STEM Pipeline",
     authors:
-      "N.A. Mack · M.B. Adeleke · E. Ballou · D. Davis · V. Ingram · K. Cox",
+      "Naja A. Mack · Michael B. Adeleke · Elijah Ballou · Destiny Davis · Vincent Ingram · Katlyn Cox",
     venue:
-      "Proceedings of the 55th ACM Technical Symposium on Computer Science Education",
+      "55th ACM Technical Symposium on Computer Science Education (SIGCSE 2024) · Volume 1 · pp. 771–777",
     details:
-      "STEM education · Computing education · Broadening participation",
+      "STEM Education · Computer Science Education · Broadening Participation",
+    doi: "https://doi.org/10.1145/3626252.3630793",
   },
+
   {
     number: "05",
     year: "2024",
-    category: "COMPUTING EDUCATION / OUTREACH",
+    category: "COMPUTER SCIENCE EDUCATION / ROBOTICS / AI",
     title:
       "CodeBears: Key Insights Gained from a Summer Coding Camp Empowering Underrepresented Youth",
     authors:
-      "N.A. Mack · M.B. Adeleke · V. Ingram · E. Ballou · J.K. Briggs-Belt · A. Jordan",
-    venue: "2024 Black Issues in Computing Education (BICE), 80–86",
+      "Naja A. Mack · Michael B. Adeleke · V. Ingram · Elijah Ballou · J. K. Briggs-Belt · A. Jordan",
+    venue:
+      "2024 Black Issues in Computing Education (BICE) · Santo Domingo, Dominican Republic · pp. 80–86",
     details:
-      "Coding education · Youth outreach · Broadening participation",
+      "Computer Science Education · Summer Coding Camp · Robotics · AI · Underrepresented Youth",
+    doi: "https://doi.org/10.1109/BICE60192.2024.00021",
   },
+
   {
     number: "06",
-    year: "2023",
-    category: "VIRTUAL REALITY / HCI",
+    year: "2024",
+    category: "VIRTUAL REALITY / HCI / MENTAL HEALTH",
     title:
       "Dreadphobia: Evaluating the Usability of a Virtual Reality Application in Support of Mental Health",
-    authors: "S. Meekins · E. Ballou · N.A. Mack",
+    authors:
+      "S. Meekins · E. Ballou · N. A. Mack",
     venue:
-      "International Conference on Human-Computer Interaction, 397–402",
+      "HCI International 2023 – Late Breaking Posters · Springer · CCIS Volume 1957",
     details:
-      "Virtual reality · Usability · Human-computer interaction",
+      "Virtual Reality · Usability Evaluation · Mental Health · HCI",
+    doi: "https://doi.org/10.1007/978-3-031-49212-9_49",
   },
 ];
 
