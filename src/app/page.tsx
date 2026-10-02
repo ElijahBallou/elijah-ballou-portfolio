@@ -1,8 +1,14 @@
+
 "use client";
 
 import Image from "next/image";
 import { useEffect } from "react";
 import styles from "./page.module.css";
+
+const RESUME_URL = "/documents/Elijah_Ballou_Resume_CV_2026.pdf";
+const LINKEDIN_URL =
+  "https://www.linkedin.com/in/elijah-ballou-a0574914b/";
+const GITHUB_URL = "https://github.com/ElijahBallou";
 
 const publications = [
   {
@@ -19,7 +25,6 @@ const publications = [
       "Brain-Computer Interfaces · Accessible Gaming · Mind Mastery",
     doi: "https://doi.org/10.54941/ahfe1006255",
   },
-
   {
     number: "02",
     year: "2025",
@@ -33,7 +38,6 @@ const publications = [
       "Programming Education · Human-Computer Interaction",
     doi: "https://doi.org/10.54941/ahfe1006251",
   },
-
   {
     number: "03",
     year: "2025",
@@ -48,7 +52,6 @@ const publications = [
       "MathWiz · Artificial Intelligence · Adaptive Learning · Culturally Responsive Learning",
     doi: "https://doi.org/10.1145/3706599.3719835",
   },
-
   {
     number: "04",
     year: "2024",
@@ -63,7 +66,6 @@ const publications = [
       "STEM Education · Computer Science Education · Broadening Participation",
     doi: "https://doi.org/10.1145/3626252.3630793",
   },
-
   {
     number: "05",
     year: "2024",
@@ -78,7 +80,6 @@ const publications = [
       "Computer Science Education · Summer Coding Camp · Robotics · AI · Underrepresented Youth",
     doi: "https://doi.org/10.1109/BICE60192.2024.00021",
   },
-
   {
     number: "06",
     year: "2024",
@@ -105,12 +106,12 @@ export default function Home() {
           }
         });
       },
-      {
-        threshold: 0.12,
-      }
+      { threshold: 0.12 }
     );
 
-    const elements = document.querySelectorAll(`.${styles.reveal}`);
+    const elements = document.querySelectorAll(
+      `.${styles.reveal}`
+    );
 
     elements.forEach((element) => {
       observer.observe(element);
@@ -121,12 +122,13 @@ export default function Home() {
 
   return (
     <main className={styles.page}>
+
       {/* ================= HEADER ================= */}
 
       <header className={styles.header}>
         <a href="#home" className={styles.brand}>
           <h1>ELIJAH BALLOU</h1>
-          <p>DEVELOPER &amp; RESEARCHER</p>
+          <p>DEVELOPER & RESEARCHER</p>
         </a>
 
         <nav className={styles.navigation}>
@@ -142,7 +144,9 @@ export default function Home() {
 
       <section id="home" className={styles.hero}>
         <div className={styles.heroContent}>
-          <p className={styles.eyebrow}>CODE. CURIOSITY. CONNECTION.</p>
+          <p className={styles.eyebrow}>
+            CODE. CURIOSITY. CONNECTION.
+          </p>
 
           <h2>
             BUILT TO BE
@@ -196,8 +200,12 @@ export default function Home() {
       {/* ================= APPROACH ================= */}
 
       <section className={styles.statement}>
-        <div className={`${styles.statementInner} ${styles.reveal}`}>
-          <p className={styles.sectionLabel}>01 / APPROACH</p>
+        <div
+          className={`${styles.statementInner} ${styles.reveal}`}
+        >
+          <p className={styles.sectionLabel}>
+            01 / APPROACH
+          </p>
 
           <h2>
             TECHNICAL DEPTH.
@@ -206,10 +214,12 @@ export default function Home() {
           </h2>
 
           <p className={styles.statementText}>
-            I build technology that goes beyond functionality. My work explores
-            how immersive computing, brain-computer interfaces, intelligent
-            systems, and human-centered design can create experiences that
-            people understand, remember, and connect with.
+            I build technology that goes beyond
+            functionality. My work explores how immersive
+            computing, brain-computer interfaces,
+            intelligent systems, and human-centered
+            design can create experiences that people
+            understand, remember, and connect with.
           </p>
         </div>
       </section>
@@ -217,8 +227,12 @@ export default function Home() {
       {/* ================= ABOUT ================= */}
 
       <section id="about" className={styles.about}>
-        <div className={`${styles.sectionHeading} ${styles.reveal}`}>
-          <p className={styles.sectionLabel}>02 / ABOUT</p>
+        <div
+          className={`${styles.sectionHeading} ${styles.reveal}`}
+        >
+          <p className={styles.sectionLabel}>
+            02 / ABOUT
+          </p>
 
           <h2>
             DEVELOPER.
@@ -229,26 +243,33 @@ export default function Home() {
           </h2>
         </div>
 
-        <div className={`${styles.aboutContent} ${styles.reveal}`}>
+        <div
+          className={`${styles.aboutContent} ${styles.reveal}`}
+        >
           <div className={styles.aboutIntro}>
             <p>
-              I&apos;m Elijah Ballou, a computer science developer and
-              researcher focused on building immersive, intelligent, and
+              I&apos;m Elijah Ballou, a computer science
+              developer and researcher focused on
+              building immersive, intelligent, and
               human-centered interactive experiences.
             </p>
           </div>
 
           <div className={styles.aboutDetails}>
             <p>
-              My work sits at the intersection of software development,
-              extended reality, brain-computer interfaces, human-computer
-              interaction, game development, and intelligent technologies.
+              My work sits at the intersection of
+              software development, extended reality,
+              brain-computer interfaces, human-computer
+              interaction, game development, and
+              intelligent technologies.
             </p>
 
             <p>
-              I&apos;m especially interested in experiences where technology
-              disappears into the interaction, allowing people to focus on what
-              they are learning, feeling, exploring, or accomplishing.
+              I&apos;m especially interested in
+              experiences where technology disappears
+              into the interaction, allowing people to
+              focus on what they are learning, feeling,
+              exploring, or accomplishing.
             </p>
 
             <div className={styles.skills}>
@@ -261,24 +282,32 @@ export default function Home() {
               <div>
                 <span>02</span>
                 <h3>WEB DEVELOPMENT</h3>
-                <p>HTML / CSS / React / Node.js / JSON / MongoDB</p>
+                <p>
+                  HTML / CSS / React / Node.js /
+                  JSON / MongoDB
+                </p>
               </div>
 
               <div>
                 <span>03</span>
-                <h3>XR &amp; GAME DEVELOPMENT</h3>
-                <p>Unity 3D / Roblox Studio / Extended Reality</p>
+                <h3>XR & GAME DEVELOPMENT</h3>
+                <p>
+                  Unity 3D / Roblox Studio /
+                  Extended Reality
+                </p>
               </div>
 
               <div>
                 <span>04</span>
                 <h3>DEVELOPMENT TOOLS</h3>
-                <p>Git / GitHub / Visual Studio Code</p>
+                <p>
+                  Git / GitHub / Visual Studio Code
+                </p>
               </div>
 
               <div>
                 <span>05</span>
-                <h3>DESIGN &amp; CREATION</h3>
+                <h3>DESIGN & CREATION</h3>
                 <p>Blender / Canva</p>
               </div>
             </div>
@@ -289,9 +318,13 @@ export default function Home() {
       {/* ================= SELECTED WORK ================= */}
 
       <section id="work" className={styles.work}>
-        <div className={`${styles.workHeader} ${styles.reveal}`}>
+        <div
+          className={`${styles.workHeader} ${styles.reveal}`}
+        >
           <div>
-            <p className={styles.sectionLabel}>03 / SELECTED WORK</p>
+            <p className={styles.sectionLabel}>
+              03 / SELECTED WORK
+            </p>
 
             <h2>
               RESEARCH BUILT
@@ -301,49 +334,68 @@ export default function Home() {
           </div>
 
           <p className={styles.workIntro}>
-            Selected projects exploring brain-computer interfaces, accessible
-            gaming, immersive computing, intelligent interaction, and
+            Selected projects exploring brain-computer
+            interfaces, accessible gaming, immersive
+            computing, intelligent interaction, and
             human-centered technology.
           </p>
         </div>
 
         <div className={styles.projectGrid}>
+
           {/* MIND MASTERY */}
 
           <article
-            className={`${styles.projectCard} ${styles.mindMasteryCard} ${styles.reveal}`}
+            className={
+              `${styles.projectCard} ` +
+              `${styles.mindMasteryCard} ` +
+              `${styles.reveal}`
+            }
           >
             <div className={styles.brainGrid} />
             <div className={styles.brainGlow} />
 
             <div className={styles.brainSignal}>
-              {Array.from({ length: 24 }).map((_, index) => (
-                <span key={index} />
-              ))}
+              {Array.from({ length: 24 }).map(
+                (_, index) => (
+                  <span key={index} />
+                )
+              )}
             </div>
 
             <div className={styles.neuralNodes}>
-              {Array.from({ length: 8 }).map((_, index) => (
-                <span key={index} />
-              ))}
+              {Array.from({ length: 8 }).map(
+                (_, index) => (
+                  <span key={index} />
+                )
+              )}
             </div>
 
             <div className={styles.projectContent}>
-              <div className={styles.projectNumber}>01</div>
+              <div className={styles.projectNumber}>
+                01
+              </div>
 
               <p className={styles.projectType}>
                 BCI / ACCESSIBLE GAMING / HCI
               </p>
 
-              <h3 className={styles.mindMasteryTitle}>MIND MASTERY</h3>
+              <h3 className={styles.mindMasteryTitle}>
+                MIND MASTERY
+              </h3>
 
-              <p className={styles.projectRole}>CO-LEAD DEVELOPER</p>
+              <p className={styles.projectRole}>
+                CO-LEAD DEVELOPER
+              </p>
 
               <p className={styles.projectDescription}>
-                A hands-free brain-computer interface game designed to make
-                interactive gaming more accessible. Built in Unity with the
-                Muse 2 EEG headset, Mind Mastery transforms brain activity,
-                intentional blinks, and gyroscopic head movement into real-time
+                A hands-free brain-computer interface
+                game designed to make interactive
+                gaming more accessible. Built in Unity
+                with the Muse 2 EEG headset, Mind
+                Mastery transforms brain activity,
+                intentional blinks, and gyroscopic
+                head movement into real-time
                 gameplay controls.
               </p>
 
@@ -356,35 +408,49 @@ export default function Home() {
                 <span>BCI</span>
               </div>
 
-              <div className={styles.projectArrow}>→</div>
+              <div className={styles.projectArrow}>
+                →
+              </div>
             </div>
           </article>
 
           {/* NIGHT LIGHT */}
 
           <article
-            className={`${styles.projectCard} ${styles.nightLightCard} ${styles.reveal}`}
+            className={
+              `${styles.projectCard} ` +
+              `${styles.nightLightCard} ` +
+              `${styles.reveal}`
+            }
           >
             <div className={styles.nightLightNoise} />
             <div className={styles.nightLightVignette} />
 
             <div className={styles.projectContent}>
-              <div className={styles.projectNumber}>02</div>
+              <div className={styles.projectNumber}>
+                02
+              </div>
 
               <p className={styles.projectType}>
                 HORROR / GAME DEVELOPMENT / ENEMY AI
               </p>
 
-              <h3 className={styles.nightLightTitle}>NIGHT LIGHT</h3>
+              <h3 className={styles.nightLightTitle}>
+                NIGHT LIGHT
+              </h3>
 
-              <p className={styles.projectRole}>LEAD DEVELOPER</p>
+              <p className={styles.projectRole}>
+                LEAD DEVELOPER
+              </p>
 
               <p className={styles.projectDescription}>
-                A first-person horror experience centered on survival,
-                environmental tension, and dynamic enemy behavior. The
-                experience combines player tracking, evolving monster
-                mechanics, environmental audio, and controller-based
-                interaction.
+                A first-person horror experience
+                centered on survival, environmental
+                tension, and dynamic enemy behavior.
+                The experience combines player
+                tracking, evolving monster mechanics,
+                environmental audio, and
+                controller-based interaction.
               </p>
 
               <div className={styles.projectTags}>
@@ -394,28 +460,42 @@ export default function Home() {
                 <span>INTERACTION</span>
               </div>
 
-              <div className={styles.projectArrow}>→</div>
+              <div className={styles.projectArrow}>
+                →
+              </div>
             </div>
           </article>
 
           {/* ORBIT XR */}
 
           <article
-            className={`${styles.projectCard} ${styles.orbitCard} ${styles.reveal}`}
+            className={
+              `${styles.projectCard} ` +
+              `${styles.orbitCard} ` +
+              `${styles.reveal}`
+            }
           >
             <div className={styles.projectContent}>
-              <div className={styles.projectNumber}>03</div>
+              <div className={styles.projectNumber}>
+                03
+              </div>
 
-              <p className={styles.projectType}>XR / TRAINING / RESEARCH</p>
+              <p className={styles.projectType}>
+                XR / TRAINING / RESEARCH
+              </p>
 
               <h3>ORBIT XR</h3>
 
-              <p className={styles.projectRole}>LEAD DEVELOPER</p>
+              <p className={styles.projectRole}>
+                LEAD DEVELOPER
+              </p>
 
               <p className={styles.projectDescription}>
-                An XR situational-awareness training experience exploring
-                immersive simulation, interaction design, decision-making, and
-                human performance within realistic training environments.
+                An XR situational-awareness training
+                experience exploring immersive
+                simulation, interaction design,
+                decision-making, and human performance
+                within realistic training environments.
               </p>
 
               <div className={styles.projectTags}>
@@ -426,7 +506,9 @@ export default function Home() {
                 <span>SIMULATION</span>
               </div>
 
-              <div className={styles.projectArrow}>→</div>
+              <div className={styles.projectArrow}>
+                →
+              </div>
             </div>
           </article>
         </div>
@@ -434,9 +516,19 @@ export default function Home() {
 
       {/* ================= PUBLICATIONS ================= */}
 
-      <section id="publication" className={styles.publications}>
-        <div className={`${styles.publicationHeading} ${styles.reveal}`}>
-          <p className={styles.sectionLabel}>04 / PUBLICATIONS</p>
+      <section
+        id="publication"
+        className={styles.publications}
+      >
+        <div
+          className={
+            `${styles.publicationHeading} ` +
+            `${styles.reveal}`
+          }
+        >
+          <p className={styles.sectionLabel}>
+            04 / PUBLICATIONS
+          </p>
 
           <div className={styles.publicationHeaderLayout}>
             <h2>
@@ -446,75 +538,80 @@ export default function Home() {
             </h2>
 
             <p className={styles.publicationIntro}>
-              My research explores human-computer interaction,
-              brain-computer interfaces, artificial intelligence, virtual
-              reality, accessible technology, and computing education — with a
-              focus on creating interactive systems that respond to real human
-              needs.
+              My research explores human-computer
+              interaction, brain-computer interfaces,
+              artificial intelligence, virtual reality,
+              accessible technology, and computing
+              education — with a focus on creating
+              interactive systems that respond to
+              real human needs.
             </p>
           </div>
         </div>
 
         <div className={styles.publicationList}>
-          {publications.map((publication) => {
-            const content = (
-              <>
-                <div className={styles.pubIndex}>{publication.number}</div>
+          {publications.map((publication) => (
+            <a
+              key={publication.number}
+              href={publication.doi}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={
+                `${styles.publicationItem} ` +
+                `${styles.publicationLink} ` +
+                `${styles.reveal}`
+              }
+            >
+              <div className={styles.pubIndex}>
+                {publication.number}
+              </div>
 
-                <div className={styles.pubContent}>
-                  <div className={styles.pubTop}>
-                    <span className={styles.pubYear}>{publication.year}</span>
+              <div className={styles.pubContent}>
+                <div className={styles.pubTop}>
+                  <span className={styles.pubYear}>
+                    {publication.year}
+                  </span>
 
-                    <span className={styles.pubType}>
-                      {publication.category}
-                    </span>
-                  </div>
-
-                  <h3>{publication.title}</h3>
-
-                  <p className={styles.pubAuthors}>{publication.authors}</p>
-
-                  <p className={styles.pubVenue}>{publication.venue}</p>
-
-                  <p className={styles.pubDetails}>{publication.details}</p>
+                  <span className={styles.pubType}>
+                    {publication.category}
+                  </span>
                 </div>
 
-                <span className={styles.pubArrow}>→</span>
-              </>
-            );
+                <h3>{publication.title}</h3>
 
-            if (publication.doi) {
-              return (
-                <a
-                  key={publication.number}
-                  href={publication.doi}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`${styles.publicationItem} ${styles.publicationLink} ${styles.reveal}`}
-                >
-                  {content}
-                </a>
-              );
-            }
+                <p className={styles.pubAuthors}>
+                  {publication.authors}
+                </p>
 
-            return (
-              <article
-                key={publication.number}
-                className={`${styles.publicationItem} ${styles.reveal}`}
-              >
-                {content}
-              </article>
-            );
-          })}
+                <p className={styles.pubVenue}>
+                  {publication.venue}
+                </p>
+
+                <p className={styles.pubDetails}>
+                  {publication.details}
+                </p>
+              </div>
+
+              <span className={styles.pubArrow}>
+                →
+              </span>
+            </a>
+          ))}
         </div>
       </section>
 
       {/* ================= RESUME ================= */}
 
       <section id="resume" className={styles.resume}>
-        <div className={`${styles.resumeInner} ${styles.reveal}`}>
+        <div
+          className={
+            `${styles.resumeInner} ${styles.reveal}`
+          }
+        >
           <div className={styles.resumeHeading}>
-            <p className={styles.sectionLabel}>05 / RESUME</p>
+            <p className={styles.sectionLabel}>
+              05 / RESUME
+            </p>
 
             <h2>
               EXPERIENCE.
@@ -525,23 +622,30 @@ export default function Home() {
             </h2>
 
             <p className={styles.resumeIntro}>
-              Explore my professional and academic experience across software
-              development, research, XR, human-computer interaction, game
-              development, and emerging interactive technologies.
+              Explore my professional and academic
+              experience across software development,
+              research, XR, human-computer interaction,
+              game development, and emerging
+              interactive technologies.
             </p>
           </div>
 
           <div className={styles.resumeCard}>
             <div className={styles.resumeCardTop}>
               <div>
-                <span className={styles.resumeFileType}>PDF / RESUME</span>
+                <span className={styles.resumeFileType}>
+                  PDF / RESUME
+                </span>
 
                 <h3>ELIJAH BALLOU</h3>
-
-                <p>Developer &amp; Researcher</p>
+                <p>Developer & Researcher</p>
               </div>
 
-              <span className={styles.resumeDocumentNumber}>01</span>
+              <span
+                className={styles.resumeDocumentNumber}
+              >
+                01
+              </span>
             </div>
 
             <div className={styles.resumeDivider} />
@@ -549,7 +653,10 @@ export default function Home() {
             <div className={styles.resumeInfo}>
               <div>
                 <span>FOCUS</span>
-                <p>Software · XR · HCI · Game Development · BCI</p>
+                <p>
+                  Software · XR · HCI ·
+                  Game Development · BCI
+                </p>
               </div>
 
               <div>
@@ -568,19 +675,21 @@ export default function Home() {
 
             <div className={styles.resumeActions}>
               <a
-                href="/documents/Elijah_Ballou_Resume_CV_updated.pdf"
+                href={RESUME_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.resumePrimaryButton}
+                aria-label="View Elijah Ballou's résumé"
               >
                 VIEW RESUME
                 <span>→</span>
               </a>
 
               <a
-                href="/documents/Elijah_Ballou_Resume_CV_updated.pdf"
-                download
+                href={RESUME_URL}
+                download="Elijah_Ballou_Resume_CV_2026.pdf"
                 className={styles.resumeSecondaryButton}
+                aria-label="Download Elijah Ballou's résumé"
               >
                 DOWNLOAD PDF
                 <span>↓</span>
@@ -593,9 +702,15 @@ export default function Home() {
       {/* ================= CONNECT ================= */}
 
       <section id="connect" className={styles.contact}>
-        <div className={`${styles.contactInner} ${styles.reveal}`}>
+        <div
+          className={
+            `${styles.contactInner} ${styles.reveal}`
+          }
+        >
           <div className={styles.contactHeader}>
-            <p className={styles.sectionLabel}>06 / CONNECT</p>
+            <p className={styles.sectionLabel}>
+              06 / CONNECT
+            </p>
 
             <p className={styles.contactAvailability}>
               OPEN TO COLLABORATION
@@ -613,9 +728,11 @@ export default function Home() {
               </h2>
 
               <p className={styles.contactText}>
-                I&apos;m interested in opportunities involving software
-                development, XR, game development, human-computer interaction,
-                research, and emerging interactive technologies.
+                I&apos;m interested in opportunities
+                involving software development, XR,
+                game development, human-computer
+                interaction, research, and emerging
+                interactive technologies.
               </p>
             </div>
 
@@ -625,39 +742,59 @@ export default function Home() {
                 className={styles.contactLink}
               >
                 <div>
-                  <span className={styles.contactLinkLabel}>EMAIL</span>
+                  <span
+                    className={styles.contactLinkLabel}
+                  >
+                    EMAIL
+                  </span>
                   <strong>elbal1@morgan.edu</strong>
                 </div>
 
-                <span className={styles.contactArrow}>→</span>
+                <span className={styles.contactArrow}>
+                  →
+                </span>
               </a>
 
               <a
-                href="https://www.linkedin.com/in/elijah-ballou"
+                href={LINKEDIN_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.contactLink}
               >
                 <div>
-                  <span className={styles.contactLinkLabel}>LINKEDIN</span>
-                  <strong>Connect professionally</strong>
+                  <span
+                    className={styles.contactLinkLabel}
+                  >
+                    LINKEDIN
+                  </span>
+                  <strong>
+                    Connect professionally
+                  </strong>
                 </div>
 
-                <span className={styles.contactArrow}>→</span>
+                <span className={styles.contactArrow}>
+                  →
+                </span>
               </a>
 
               <a
-                href="https://github.com/ElijahBallou"
+                href={GITHUB_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.contactLink}
               >
                 <div>
-                  <span className={styles.contactLinkLabel}>GITHUB</span>
+                  <span
+                    className={styles.contactLinkLabel}
+                  >
+                    GITHUB
+                  </span>
                   <strong>Explore my code</strong>
                 </div>
 
-                <span className={styles.contactArrow}>→</span>
+                <span className={styles.contactArrow}>
+                  →
+                </span>
               </a>
             </div>
           </div>
@@ -672,7 +809,7 @@ export default function Home() {
             <h2>ELIJAH BALLOU</h2>
 
             <p className={styles.footerRole}>
-              DEVELOPER &amp; RESEARCHER
+              DEVELOPER & RESEARCHER
             </p>
 
             <p className={styles.footerFocus}>
@@ -684,7 +821,9 @@ export default function Home() {
           </div>
 
           <div className={styles.footerGroup}>
-            <p className={styles.footerLabel}>NAVIGATION</p>
+            <p className={styles.footerLabel}>
+              NAVIGATION
+            </p>
 
             <div className={styles.footerLinks}>
               <a href="#about">ABOUT</a>
@@ -696,7 +835,9 @@ export default function Home() {
           </div>
 
           <div className={styles.footerGroup}>
-            <p className={styles.footerLabel}>CONNECT</p>
+            <p className={styles.footerLabel}>
+              CONNECT
+            </p>
 
             <div className={styles.footerSocials}>
               <a href="mailto:elbal1@morgan.edu">
@@ -704,7 +845,7 @@ export default function Home() {
               </a>
 
               <a
-                href="https://www.linkedin.com/in/elijah-ballou"
+                href={LINKEDIN_URL}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -712,7 +853,7 @@ export default function Home() {
               </a>
 
               <a
-                href="https://github.com/ElijahBallou"
+                href={GITHUB_URL}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -726,7 +867,7 @@ export default function Home() {
           <p>© 2026 ELIJAH BALLOU</p>
 
           <p className={styles.footerBuilt}>
-            DESIGNED &amp; DEVELOPED BY ELIJAH BALLOU
+            DESIGNED & DEVELOPED BY ELIJAH BALLOU
           </p>
 
           <a href="#home" className={styles.backToTop}>
