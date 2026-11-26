@@ -6,23 +6,17 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 30px;
+  scroll-padding-top: 80px;
+  background: #0a1224;
 }
 
 body {
   margin: 0;
-  background: #ffffff;
-  color: #101010;
-
-  font-family:
-    var(--font-roboto),
-    Arial,
-    Helvetica,
-    sans-serif;
-
+  background: #0a1224;
+  color: #e9eef8;
+  font-family: var(--font-schibsted), "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   line-height: 1.5;
-
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -43,4 +37,10 @@ img {
 ::selection {
   background: #1688ff;
   color: #ffffff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
